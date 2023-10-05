@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar Section-->
+    <nav class="navbar">
+      <div class="nav-elements">
+        <ul class="nav-head">
+          <li class="nav-brand">
+            <img src="assets/images/logo-icon.png" alt="logo" />
+            <h1>Music <br /><span>Studio</span></h1>
+          </li>
+          <li class="favourite">
+            <h3>Favourites</h3>
+          </li>
+        </ul>
+
+        <ul class="nav-body">
+          <li class="search-music">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search-music" placeholder="Search..." />
+            <i class="fa-solid fa-microphone"></i>
+          </li>
+
+          <li class="notifications">
+            <i class="fa-solid fa-bell"></i>
+          </li>
+
+          <li class="user-account">
+            <i class="fa-solid fa-circle-user"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="container">
+      <!-- Body Section -->
+      <section class="body-section">
+        <section class="content">
+          <div class="carousel">
+            <div class="carousel-elements">
+              <img
+                src="./assets/images/crousel/carousel1.jpg"
+                alt="carousel1.jpg"
+                id="carousel1"
+              />
+              <img
+                src="./assets/images/crousel/carousel2.jpg"
+                alt="carousel2.jpg"
+                id="carousel2"
+              />
+              <img
+                src="./assets/images/crousel/carousel3.jpg"
+                alt="carousel3.jpg"
+                id="carousel3"
+              />
+            </div>
+          </div>
+          <div class="issue-list">
+            <h2 class="sub-headings">Latest Release</h2>
+            <ul class="issues">
+              <li class="issue-item">
+                <div class="issue-detail">
+                  <img src="./assets/images/songs/song1.jpeg" alt="song1" />
+                  <i class="fa-solid fa-circle-play"></i>
+                  <div class="song-detail">
+                    <h3>On My Love</h3>
+                    <p>Zara Larsson</p>
+                    <p class="date-issue">24 JAN 2023</p>
+                  </div>
+                </div>
+
+                <div class="song-time">
+                  <a href="#issue-more-option-1"
+                    ><i class="fa-solid fa-ellipsis"></i
+                  ></a>
+                  <p class="song-duration">3:55</p>
+
+                  <div class="issue-more-option" id="issue-more-option-1">
+                    <ul class="more-option">
+                      <li class="options">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <p>Play Now</p>
+                      </li>
+                      <li class="options">
+                        <i class="fa-solid fa-list"></i>
+                        <p>Playlist</p>
+                      </li>
+                      <li class="options">
+                        <i class="fa-solid fa-heart-circle-plus"></i>
+                        <p>Favourite</p>
+                      </li>
+                      <li class="options">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p>Info</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="issue-item">
+                <div class="issue-detail">
+                  <img src="./assets/images/songs/song4.jpeg" alt="song4" />
+                  <i class="fa-solid fa-circle-play"></i>
+                  <div class="song-detail">
+                    <h3>Hukum</h3>
+                    <p>Anirudh Ravichander</p>
+                    <p class="date-issue">19 SEP 2023</p>
+                  </div>
+                </div>
+
+                <div class="song-time">
+                  <a href="#issue-more-option-2"
+                    ><i class="fa-solid fa-ellipsis"></i
+                  ></a>
+                  <p class="song-duration">3:27</p>
+                  <div class="issue-more-option" id="issue-more-option-2">
+                    <ul class="more-option">
+                      <li class="options">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <p>Play Now</p>
+                      </li>
+                      <li class="options">
+                        <i class="fa-solid fa-list"></i>
+                        <p>Playlist</p>
+                      </li>
+                      <li class="options">
+                        <i class="fa-solid fa-heart-circle-plus"></i>
+                        <p>Favourite</p>
+                      </li>
+                      <li class="options">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p>Info</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="issue-item">
+                <div class="issue-detail">
+                  <img src="./assets/images/songs/song2.jpeg" alt="song2" />
+                  <i class="fa-solid fa-circle-play"></i>
+                  <div class="song-detail">
+                    <h3>Crush</h3>
+                    <p>Bella Poarch</p>
+                    <p class="date-issue">06 DEC 2022</p>
+                  </div>
+                </div>
+
+                <div class="song-time">
+                  <i class="fa-solid fa-ellipsis"></i>
+                  <p class="song-duration">4:11</p>
+                </div>
+              </li>
+              <li class="issue-item">
+                <div class="issue-detail">
+                  <img src="./assets/images/songs/song5.jpeg" alt="song1" />
+                  <i class="fa-solid fa-circle-play"></i>
+                  <div class="song-detail">
+                    <h3>Naa Ready Thaan</h3>
+                    <p>Thalapathy Vijay</p>
+                    <p class="date-issue">15 MAR 2023</p>
+                  </div>
+                </div>
+
+                <div class="song-time">
+                  <i class="fa-solid fa-ellipsis"></i>
+                  <p class="song-duration">4:08</p>
+                </div>
+              </li>
+              <li class="issue-item">
+                <div class="issue-detail">
+                  <img src="./assets/images/songs/song3.jpeg" alt="song3" />
+                  <i class="fa-solid fa-circle-play"></i>
+                  <div class="song-detail">
+                    <h3>Treat You Better</h3>
+                    <p>Shawn Mendes</p>
+                    <p class="date-issue">02 NOV 2022</p>
+                  </div>
+                </div>
+
+                <div class="song-time">
+                  <i class="fa-solid fa-ellipsis"></i>
+                  <p class="song-duration">3:05</p>
+                </div>
+              </li>
+              <li class="issue-item">
+                <div class="issue-detail">
+                  <img src="./assets/images/songs/song6.jpeg" alt="song6" />
+                  <i class="fa-solid fa-circle-play"></i>
+                  <div class="song-detail">
+                    <h3>Ennai Vittu</h3>
+                    <p>Yuvan Shankar Raja</p>
+                    <p class="date-issue">09 FEB 2023</p>
+                  </div>
+                </div>
+
+                <div class="song-time">
+                  <i class="fa-solid fa-ellipsis"></i>
+                  <p class="song-duration">4:04</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="popular-artist-list">
+            <h2>Popular Artists</h2>
+            <ul class="artist-list">
+              <li class="artist">
+                <a href="./playlist.html">
+                  <img
+                  src="./assets/images/popular_artist/artist-1.jpeg"
+                  alt="artist-1"
+                  class="artist-img"
+                />
+                <i class="fa-solid fa-play"></i>
+                <h4 class="artist-name">Alan Walker</h4>
+                </a>
+              </li>
+              <li class="artist">
+                <a href="./playlist.html">
+                  <img
+                  src="./assets/images/popular_artist/artist-2.jpeg"
+                  alt="artist-1"
+                  class="artist-img"
+                />
+                <i class="fa-solid fa-play"></i>
+                <h4 class="artist-name">Marshmellow</h4>
+                </a>
+              </li>
+              <li class="artist">
+                <a href="./playlist.html">
+                  <img
+                  src="./assets/images/popular_artist/artist-3.jpeg"
+                  alt="artist-1"
+                  class="artist-img"
+                />
+                <i class="fa-solid fa-play"></i>
+                <h4 class="artist-name">A R Rahuman</h4>
+                </a>
+              </li>
+              <li class="artist">
+                <a href="./playlist.html">
+                  <img
+                  src="./assets/images/popular_artist/artist-4.jpeg"
+                  alt="artist-1"
+                  class="artist-img"
+                />
+                <i class="fa-solid fa-play"></i>
+                <h4 class="artist-name">G V Praksh</h4>
+                </a>
+              </li>
+              <li class="artist">
+                <a href="./playlist.html">
+                  <img
+                  src="./assets/images/popular_artist/artist-5.jpeg"
+                  alt="artist-1"
+                  class="artist-img"
+                />
+                <i class="fa-solid fa-play"></i>
+                <h4 class="artist-name">Illaiyaraja</h4>
+                </a>
+              </li>
+              <li class="artist">
+                <a href="./playlist.html">
+                  <img
+                  src="./assets/images/popular_artist/artist-6.jpeg"
+                  alt="artist-1"
+                  class="artist-img"
+                />
+                <i class="fa-solid fa-play"></i>
+                <h4 class="artist-name">Shreya Goshal</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="music-situation-list">
+            <div class="box-1">
+              <div class="box-2">
+                <div class="box-3">
+                  <div class="music-content">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <p>Station</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="situation-mood">
+              <li class="mood-list" id="mood-list-1">
+                <img
+                  src="./assets/images/music_theme/chill.jpg"
+                  alt="chill"
+                  class="situation-img"
+                />
+                <h3>Chill</h3>
+              </li>
+              <li class="mood-list" id="mood-list-2">
+                <img
+                  src="./assets/images/music_theme/love.jpg"
+                  alt="love"
+                  class="situation-img"
+                />
+                <h3>Love</h3>
+              </li>
+              <li class="mood-list" id="mood-list-3">
+                <img
+                  src="./assets/images/music_theme/pop.jpg"
+                  alt="pop"
+                  class="situation-img"
+                />
+                <h3>Pop</h3>
+              </li>
+              <li class="mood-list" id="mood-list-4">
+                <img
+                  src="./assets/images/music_theme/retro.jpg"
+                  alt="retro"
+                  class="situation-img"
+                />
+                <h3>Retro</h3>
+              </li>
+              <li class="mood-list" id="mood-list-5">
+                <img
+                  src="./assets/images/music_theme/rock.jpg"
+                  alt="rock"
+                  class="situation-img"
+                />
+                <h3>Rock</h3>
+              </li>
+              <li class="mood-list" id="mood-list-6">
+                <img
+                  src="./assets/images/music_theme/workout.jpg"
+                  alt="workout"
+                  class="situation-img"
+                />
+                <h3>Workout</h3>
+              </li>
+            </ul>
+          </div>
+          <div class="catagory-list">
+            <div class="catagory party">
+              <img src="./assets/images/music_theme2/party.jpg" alt="party" />
+              <h3>Party</h3>
+            </div>
+            <div class="catagory electronic">
+              <img
+                src="./assets/images//music_theme2/electronic.jpg"
+                alt="electronic"
+              />
+              <h3>Electronic</h3>
+            </div>
+            <div class="catagory road-trip">
+              <img src="./assets/images/music_theme2/road.jpg" alt="road" />
+              <h3>Road Trip</h3>
+            </div>
+          </div>
+          <div class="language-list">
+            <h2>Tamil Hits</h2>
+            <ul class="language">
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_tamil/tamil-song-1.jpeg"
+                  alt="tamil-song-1"
+                />
+                <h3 class="song-name">Anniyan</h3>
+                <p>15 FEB 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_tamil/tamil-song-2.jpeg"
+                  alt="tamil-song-2"
+                />
+                <h3 class="song-name">Thangamey</h3>
+                <p>01 JAN 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_tamil/tamil-song-3.jpeg"
+                  alt="tamil-song-3"
+                />
+                <h3 class="song-name">Kanchana 3</h3>
+                <p>30 JUN 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_tamil/tamil-song-4.jpeg"
+                  alt="tamil-song-4"
+                />
+                <h3 class="song-name">Vallu</h3>
+                <p>03 APR 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_tamil/tamil-song-5.jpeg"
+                  alt="tamil-song-5"
+                />
+                <h3 class="song-name">Murgan Songs</h3>
+                <p>18 JUL 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_tamil/tamil-song-6.jpeg"
+                  alt="tamil-song-6"
+                />
+                <h3 class="song-name">Mundasupatti</h3>
+                <p>21 SEP 2023</p>
+              </li>
+            </ul>
+          </div>
+          <div class="language-list last-element">
+            <h2>English Hits</h2>
+            <ul class="language">
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_english/english-song-1.jpeg"
+                  alt="english-song-1"
+                />
+                <h3 class="song-name">Let Me Love</h3>
+                <p>15 FEB 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_english/english-song-2.jpeg"
+                  alt="english-song-2"
+                />
+                <h3 class="song-name">Bad Boy</h3>
+                <p>01 JAN 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_english/english-song-3.jpeg"
+                  alt="english-song-3"
+                />
+                <h3 class="song-name">Don't Go</h3>
+                <p>30 JUN 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_english/english-song-4.jpeg"
+                  alt="english-song-4"
+                />
+                <h3 class="song-name">Senorita</h3>
+                <p>03 APR 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_english/english-song-5.jpeg"
+                  alt="english-song-5"
+                />
+                <h3 class="song-name">Shape Of You</h3>
+                <p>18 JUL 2023</p>
+              </li>
+              <li class="song-list">
+                <img
+                  src="./assets/images/latest_english/english-song-6.jpeg"
+                  alt="english-song-6"
+                />
+                <h3 class="song-name">Beliver</h3>
+                <p>21 SEP 2023</p>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="play-song"></div> -->
+        </section>
+
+        <aside class="aside-section">
+          <div class="queue-heading">
+            <h3>Queue</h3>
+            <p class="queue-menu">
+              <a href="#queue-menus"
+                >Queue <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </p>
+
+            <div class="queue-options">
+              <ul class="queue-box hidden" id="queue-menus">
+                <li class="queue-box-list">Playlist</li>
+                <li class="queue-box-list">Favourite Songs</li>
+                <li class="queue-box-list"><a href="#">Close</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="queue-elements">
+            <ul class="queue-element">
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>01</p>
+                  <img
+                    src="./assets/images/playlist/p1.jpeg"
+                    alt="queue-image-1"
+                  />
+                  <h5>
+                    <span class="queue-song-name">En Roja Neeya</span>
+                    <span>Hesham Abdul Wahab</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>02</p>
+                  <img
+                    src="./assets/images/playlist/p2.jpeg"
+                    alt="queue-image-2"
+                  />
+                  <h5>
+                    <span class="queue-song-name">Manike</span>
+                    <span>Yohani</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>03</p>
+                  <img
+                    src="./assets/images/playlist/p3.jpeg"
+                    alt="queue-image-1"
+                  />
+                  <h5>
+                    <span class="queue-song-name">Thayaga Naan</span>
+                    <span>Jen Martin</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>04</p>
+                  <img
+                    src="./assets/images/playlist/p4.jpeg"
+                    alt="queue-image-1"
+                  />
+                  <h5>
+                    <span class="queue-song-name">Sevatha Pulla</span>
+                    <span>Ghibran</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>05</p>
+                  <img
+                    src="./assets/images/playlist/p5.jpeg"
+                    alt="queue-image-1"
+                  />
+                  <h5>
+                    <span class="queue-song-name">Mark Antony</span>
+                    <span>Asal Kolaar</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>06</p>
+                  <img
+                    src="./assets/images/playlist/p1.jpeg"
+                    alt="queue-image-1"
+                  />
+                  <h5>
+                    <span class="queue-song-name">En Roja Neeya</span>
+                    <span>Hesham Abdul Wahab</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>07</p>
+                  <img
+                    src="./assets/images/playlist/p2.jpeg"
+                    alt="queue-image-2"
+                  />
+                  <h5>
+                    <span class="queue-song-name">Manike</span>
+                    <span>Yohani</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>08</p>
+                  <img
+                    src="./assets/images/playlist/p3.jpeg"
+                    alt="queue-image-1"
+                  />
+                  <h5>
+                    <span class="queue-song-name">Thayaga Naan</span>
+                    <span>Jen Martin</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>09</p>
+                  <img
+                    src="./assets/images/playlist/p4.jpeg"
+                    alt="queue-image-1"
+                  />
+                  <h5>
+                    <span class="queue-song-name">Sevatha Pulla</span>
+                    <span>Ghibran</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+              <li class="queue-list">
+                <div class="queue-content">
+                  <p>10</p>
+                  <img
+                    src="./assets/images/playlist/p5.jpeg"
+                    alt="queue-image-1"
+                  />
+                  <h5>
+                    <span class="queue-song-name">Mark Antony</span>
+                    <span>Asal Kolaar</span>
+                  </h5>
+                </div>
+                <div class="queue-fav">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="song-desp">
+        <img
+          src="./assets/images/latest_english/english-song-2.jpeg"
+          alt="loading-song"
+          class="song-desp-img"
+        />
+        <h3 class="song-desp-name">
+          Bad Boy (feat. Luana Kiara)
+          <span>Raaban, Tungevaag, Luana Kiara</span>
+        </h3>
+        <i class="fa-regular fa-heart"></i>
+      </div>
+
+      <div class="song-time-indication">
+        <div class="song-time-buttons">
+          <i class="fa-solid fa-shuffle shuffle"></i>
+          <i class="fa-solid fa-backward-step backward"></i>
+          <i class="fa-regular fa-circle-pause pasue"></i>
+          <i class="fa-solid fa-forward-step forward"></i>
+          <i class="fa-solid fa-repeat repeat"></i>
+        </div>
+        <div class="song-time-indicators">
+          <p>1:44</p>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="30"
+            class="slider"
+            id="myRange"
+          />
+          <p>4:06</p>
+        </div>
+      </div>
+
+      <div class="song-settings">
+        <i class="fa-solid fa-sliders"></i>
+        <i class="fa-solid fa-computer"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="90"
+          class="slider"
+          id="volume-range"
+        />
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
